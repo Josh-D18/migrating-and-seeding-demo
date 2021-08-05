@@ -1,0 +1,23 @@
+{
+  "name": "ehsiung",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon index.js",
+    "tables:migrate": "knex migrate:latest",
+    "tables:drop": "knex migrate:rollback",
+    "tables:seed": "knex seed:run"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "knex": "^0.95.9",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
